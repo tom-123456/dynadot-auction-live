@@ -20,46 +20,35 @@ header{position:sticky;top:0;z-index:10;background:#1e1b4b;color:#fff;padding-to
 .ends i{width:8px;height:8px;border-radius:50%;background:#f87171;animation:p 1.6s infinite}
 @keyframes p{50%{opacity:.25}}
 .hero{background:linear-gradient(135deg,#4f46e5 0%,#7c3aed 45%,#db2777 100%);color:#fff;text-align:center;padding:40px 20px 70px}
-.live{display:inline-block;font-size:.8rem;font-weight:800;letter-spacing:.5px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.4);padding:6px 14px;border-radius:99px;margin-bottom:16px}
+.live{display:inline-flex;align-items:center;gap:9px;font-size:clamp(.7rem,2.9vw,.8rem);font-weight:500;letter-spacing:2px;text-transform:uppercase;color:#fff;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.4);padding:7px 16px;border-radius:99px;margin-bottom:18px;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.live b{font-weight:800}
+.live i{width:7px;height:7px;border-radius:50%;background:#fb7185;box-shadow:0 0 8px #fb7185;animation:p 1.2s infinite}
+@keyframes g{0%,100%{box-shadow:0 0 0 0 rgba(255,255,255,.55)}50%{box-shadow:0 0 0 12px rgba(255,255,255,0)}}
 .hero h1{font-size:clamp(1.9rem,6.4vw,3.3rem);line-height:1.1;letter-spacing:-1.2px;font-weight:800;max-width:760px;margin:0 auto}
 .hero h1 em{font-style:normal;color:#fde68a}
 .hero p{margin:14px auto 0;max-width:520px;color:#fce7f3;font-size:clamp(1rem,2.6vw,1.15rem)}
 .list{max-width:940px;margin:-34px auto 0;padding:0 20px 20px;display:flex;flex-direction:column;gap:12px;counter-reset:n}
 .row{display:flex;align-items:center;gap:18px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px 20px;
-box-shadow:0 1px 2px rgba(15,23,42,.05);transition:transform .2s,box-shadow .2s,border-color .2s}
+border-top:3px solid #d4a73a;box-shadow:0 1px 2px rgba(15,23,42,.05);transition:transform .2s,box-shadow .2s,border-color .2s}
 .row:hover{transform:translateY(-2px);border-color:#c4b5fd;box-shadow:0 14px 30px -14px rgba(124,58,237,.5)}
-.logo{flex:0 0 56px;height:56px;border-radius:16px;display:grid;place-items:center;background:linear-gradient(135deg,#ede9fe,#fce7f3)}
-.logo svg{width:30px;height:30px;fill:none;stroke:var(--acc);stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.logo{flex:0 0 58px;height:58px;border-radius:16px;display:grid;place-items:center;background:linear-gradient(135deg,#1e1b4b,#4c1d95);border:1.5px solid #d4a73a;box-shadow:0 6px 16px -6px rgba(30,27,75,.6)}
+.logo svg{width:30px;height:30px;fill:none;stroke:#fcd34d;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .info{flex:1;min-width:0}
-.info h2{font-size:clamp(1.2rem,4vw,1.65rem);font-weight:800;letter-spacing:-.5px;word-break:break-word;line-height:1.2}
-.info h2::before{counter-increment:n;content:counter(n,decimal-leading-zero);font-size:.7rem;font-weight:800;color:var(--acc);margin-right:10px;vertical-align:middle;letter-spacing:.5px}
+.info h2{font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.4rem,4.8vw,2rem);font-weight:700;letter-spacing:.2px;word-break:break-word;line-height:1.2;background:linear-gradient(90deg,#1e1b4b,#5b21b6);-webkit-background-clip:text;background-clip:text;color:transparent}
+.info h2 span{font-style:italic;font-weight:400;background:linear-gradient(90deg,#b8860b,#e8b923);-webkit-background-clip:text;background-clip:text;color:transparent}
 .info p{color:var(--mute);margin-top:2px;font-size:.97rem}
-.tag{display:inline-block;margin-top:8px;font-size:.68rem;font-weight:800;letter-spacing:.6px;text-transform:uppercase;color:#047857;background:#ecfdf5;border-radius:99px;padding:3px 10px}
 .btn{flex:0 0 auto;text-decoration:none;color:#fff;font-weight:800;padding:14px 28px;border-radius:12px;background:linear-gradient(135deg,#7c3aed,#c026d3);white-space:nowrap;
 box-shadow:0 8px 18px -8px #7c3aed;transition:background .15s,transform .15s;-webkit-tap-highlight-color:transparent}
 .btn:hover{filter:brightness(1.1);transform:translateY(-1px)}
 .btn:active{transform:scale(.97)}
-.how{max-width:940px;margin:0 auto;padding:34px 20px 10px;text-align:center}
-.how h3{font-size:1.35rem;font-weight:800;letter-spacing:-.4px;margin-bottom:16px}
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;text-align:left}
-.steps div{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
-.steps b{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--acc);color:#fff;font-size:.9rem;margin-bottom:10px}
-.steps strong{display:block}
-.steps span{color:var(--mute);font-size:.92rem}
-.final{max-width:940px;margin:24px auto 0;padding:0 20px 36px}
-.final div{background:linear-gradient(135deg,#4f46e5,#7c3aed 50%,#db2777);color:#fff;border-radius:22px;text-align:center;padding:34px 20px}
-.final h3{font-size:clamp(1.3rem,4.6vw,1.9rem);letter-spacing:-.5px}
-.final p{color:#fce7f3;margin-top:6px}
-.final a{display:inline-block;margin-top:18px;text-decoration:none;font-weight:800;color:#be185d;background:#fff;padding:14px 28px;border-radius:12px}
 footer{text-align:center;padding:6px 20px calc(30px + env(safe-area-inset-bottom));color:var(--mute);font-size:.84rem}
 @media(max-width:640px){
 .hero{padding:30px 18px 60px}
 .row{flex-wrap:wrap;padding:16px;gap:12px 14px}
-.logo{flex-basis:48px;height:48px;border-radius:14px}
+.logo{flex-basis:50px;height:50px;border-radius:14px}
 .logo svg{width:26px;height:26px}
 .info{flex:1 1 calc(100% - 70px)}
 .btn{flex:1 1 100%;text-align:center}
-.steps{grid-template-columns:1fr}
 .ends{font-size:.7rem;padding:5px 10px}
 }
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
@@ -86,7 +75,7 @@ footer{text-align:center;padding:6px 20px calc(30px + env(safe-area-inset-bottom
 </header>
 
 <section class="hero">
-  <span class="live">🔥 LIVE NOW · Ends Tomorrow</span>
+  <span class="live"><i></i><b>🔥 Live Now</b> @ Dynadot</span>
   <h1>Bid Now. <em>No Reserve.</em></h1>
   <p>Tap Bid Now on any domain below and join the live Dynadot auction right away.</p>
 </section>
@@ -95,70 +84,53 @@ footer{text-align:center;padding:6px 20px calc(30px + env(safe-area-inset-bottom
 
   <article class="row">
     <div class="logo"><svg><use href="#i1"/></svg></div>
-    <div class="info"><h2>SixTrek.com</h2><p>Six steps to your next big adventure.</p><span class="tag">No Reserve</span></div>
+    <div class="info"><h2>SixTrek<span>.com</span></h2><p>Six steps to your next big adventure.</p></div>
     <a class="btn" href="https://www.dynadot.com/market/auction/sixtrek.com" target="_blank" rel="noopener">Bid Now</a>
   </article>
 
   <article class="row">
     <div class="logo"><svg><use href="#i2"/></svg></div>
-    <div class="info"><h2>ChristmasPizza.com</h2><p>Make the holidays hot, cheesy and unforgettable.</p><span class="tag">No Reserve</span></div>
+    <div class="info"><h2>ChristmasPizza<span>.com</span></h2><p>Make the holidays hot, cheesy and unforgettable.</p></div>
     <a class="btn" href="https://www.dynadot.com/market/auction/christmaspizza.com" target="_blank" rel="noopener">Bid Now</a>
   </article>
 
   <article class="row">
     <div class="logo"><svg><use href="#i3"/></svg></div>
-    <div class="info"><h2>BestPaidSites.com</h2><p>Where smart earners find sites that really pay.</p><span class="tag">No Reserve</span></div>
+    <div class="info"><h2>BestPaidSites<span>.com</span></h2><p>Where smart earners find sites that really pay.</p></div>
     <a class="btn" href="https://www.dynadot.com/market/auction/bestpaidsites.com" target="_blank" rel="noopener">Bid Now</a>
   </article>
 
   <article class="row">
     <div class="logo"><svg><use href="#i4"/></svg></div>
-    <div class="info"><h2>TexanRestaurant.com</h2><p>Big flavors, bigger Texan hospitality.</p><span class="tag">No Reserve</span></div>
+    <div class="info"><h2>TexanRestaurant<span>.com</span></h2><p>Big flavors, bigger Texan hospitality.</p></div>
     <a class="btn" href="https://www.dynadot.com/market/auction/texanrestaurant.com" target="_blank" rel="noopener">Bid Now</a>
   </article>
 
   <article class="row">
     <div class="logo"><svg><use href="#i5"/></svg></div>
-    <div class="info"><h2>StoryCaption.com</h2><p>Every story deserves the perfect caption.</p><span class="tag">No Reserve</span></div>
+    <div class="info"><h2>StoryCaption<span>.com</span></h2><p>Every story deserves the perfect caption.</p></div>
     <a class="btn" href="https://www.dynadot.com/market/auction/storycaption.com" target="_blank" rel="noopener">Bid Now</a>
   </article>
 
   <article class="row">
     <div class="logo"><svg><use href="#i6"/></svg></div>
-    <div class="info"><h2>UtahBeachHomes.com</h2><p>Your dream home, with a beach state of mind.</p><span class="tag">No Reserve</span></div>
+    <div class="info"><h2>UtahBeachHomes<span>.com</span></h2><p>Your dream home, with a beach state of mind.</p></div>
     <a class="btn" href="https://www.dynadot.com/market/auction/utahbeachhomes.com" target="_blank" rel="noopener">Bid Now</a>
   </article>
 
   <article class="row">
     <div class="logo"><svg><use href="#i7"/></svg></div>
-    <div class="info"><h2>CafeBar21.com</h2><p>Coffee by day, good vibes by night.</p><span class="tag">No Reserve</span></div>
+    <div class="info"><h2>CafeBar21<span>.com</span></h2><p>Coffee by day, good vibes by night.</p></div>
     <a class="btn" href="https://www.dynadot.com/market/auction/cafebar21.com" target="_blank" rel="noopener">Bid Now</a>
   </article>
 
   <article class="row">
     <div class="logo"><svg><use href="#i8"/></svg></div>
-    <div class="info"><h2>BestCatchy.com</h2><p>Catch attention fast with a name that sticks.</p><span class="tag">No Reserve</span></div>
+    <div class="info"><h2>BestCatchy<span>.com</span></h2><p>Catch attention fast with a name that sticks.</p></div>
     <a class="btn" href="https://www.dynadot.com/market/auction/bestcatchy.com" target="_blank" rel="noopener">Bid Now</a>
   </article>
 
 </main>
-
-<section class="how">
-  <h3>How to Win in 3 Steps</h3>
-  <div class="steps">
-    <div><b>1</b><strong>Pick your domain</strong><span>Choose the name that fits your brand.</span></div>
-    <div><b>2</b><strong>Place your bid</strong><span>Tap Bid Now to open the live Dynadot auction.</span></div>
-    <div><b>3</b><strong>Win and transfer</strong><span>The highest bidder wins. No reserve price.</span></div>
-  </div>
-</section>
-
-<section class="final">
-  <div>
-    <h3>Bid Now. Auction Ends Tomorrow.</h3>
-    <p>With no reserve, the highest bid wins, whatever the price.</p>
-    <a href="#domains">Pick Your Domain &amp; Bid ↑</a>
-  </div>
-</section>
 
 <footer>&copy; <span id="y"></span> Domain Auctions &middot; All auctions are hosted and processed by Dynadot.</footer>
 <script>document.getElementById("y").textContent=new Date().getFullYear();</script>
